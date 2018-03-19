@@ -48,45 +48,47 @@
   }*/
 
   
-  body {
-      position: relative; 
-  }
-  .affix {
-      top:0;
-      width: 100%;
-      z-index: 9999 !important;
-  }
-  .navbar {
-      margin-bottom: 0px;
-  }
+body {
+    position: relative; 
+}
+.affix {
+    top:0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+.navbar {
+    margin-bottom: 0px;
+}
 
-  .affix ~ .container-fluid {
-     position: relative;
-     top: 50px;
-  }
+.affix ~ .container-fluid {
+   position: relative;
+   top: 50px;
+}
 
-  .intro{
-    height:48vW;
-    padding-top: 100px;
-    /*background-image: url('./image/background3.jpg');
-    background-attachment: scroll;*/
+.intro{
+  /*height:48vW;*/
+  min-height: 700px;
+  padding-top: 50px;
+  background-color: #DBE5FF;
+  /*background-image: url('./image/background3.jpg');
+  background-attachment: scroll;*/
 
-  }
-  .goal{
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
+}
+.goal{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 
-  .animated_text{
-    font-size:2em;
-    font-family: serif;
-    color: blue;
-  }
+.animated_text{
+  font-size:2em;
+  font-family: serif;
+  color: blue;
+}
 
-  .container_image{
-    width: 350px;
-    height: 350px;
-  }
+.container_image{
+  width: 350px;
+  height: 350px;
+}
 
 .overlay {
   position: absolute;
@@ -140,49 +142,78 @@
 }
 
 #bio {
-  padding-top:50px;
+  margin-top: -50px;
+  padding-top:20px;
   min-height:700px;
   color: #fff; 
-  background-color: #1E88E5;
+  background-color: #678FFE;
+  
 }
 
-#projects {
+.bio_desc{
+  width: 60%;
+  margin: 0 auto;
+}
+
+#intro {
   text-align: center;
   padding-top:50px;
   padding-bottom:20px;
-  min-height:700px; 
+  min-height: 700px; 
   color: #fff; 
   background-color: #673ab7;
 }
 #skills {
+  text-align: center;
   padding-top:50px;
-  min-height:700px;
-  color: #fff; 
-  background-color: #ff9800;
+  min-height:700px; 
+  background-color: #DBE5FF;
 }
 
 .list_tech{
   text-align: left;
+
 }  
- 
 
+.contact{
+  display: inline-block;
+  margin-right: 20px;
+}
 
+.styleGraphicon{
+  font-size: 2.5em;
+  color:blue;
+}
 
+.modal-dialog_pdf{
+  width: 80%;
+}
+
+#pdf-prev{
+  float: left;
+}
+#pdf-next{
+  float: right;
+}
 
 @media only screen and (max-width: 768px){
   .intro{
-    height: 700px;
-    padding-top: 0px;
+    min-height: 800px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   .goal{
     margin-top: 10px;
     margin-bottom: 10px;
   }
   .animated_text{
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
   .img_project_block .des_project{
    
+  }
+  .styleGraphicon{
+    font-size: 1.5em;
   }
 
 }

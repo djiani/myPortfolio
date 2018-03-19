@@ -10,6 +10,9 @@ function animate_header(){
 $(function(){
  // $(".navbar").affix({offset: {top:$("header").outerHeight(true)}});
   animate_header();
+  $('.viewpdf').click(function(event){
+    displaypdf('https://s3.us-east-2.amazonaws.com/awsunivprof/Samuel+Raoul+Djiani+Resume+4.pdf');
+  })
 
 })
 

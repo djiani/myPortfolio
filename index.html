@@ -8,36 +8,49 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="main.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <header class="container-fluid intro" >
   <div class="row"> 
-    <div class="col-sx-12 col-sm-4 container2">
-      <img src="image/sam.jpg" class="img-responsive img-circle  container_image" style="display:inline" alt="Bird" >
+    <div class="col-sx-12 col-sm-5 col-sm-offset-1 container2">
+      <img src="image/sam.jpg" class="img-responsive img-circle  container_image" style="display:inline" alt="profile" >
 
       <div class="overlay img-responsive img-circle">
         <div class="text">Hiring me!</div>
       </div>
       <h1>Samuel Raoul Djiani</h1>
     </div>
-    <div class="col-sx-12 col-sm-8">
+    <div class="col-sx-12 col-sm-6">
       <h1>I'm an ambitous Software Developer </h1>
       <div class="goal">
-        who love to build :<br> <span class="animated_text"> </span>
+        <h3>who love to build :<br> <span class="animated_text">Creative and simple solutions</span></h3>
       </div>
 
       <div>
-        <div><a href="linkedln">Linkedln</a></div> 
-        <div><a href="linkedln">github</a></div>
-        <div><a href="github.com">Linkedln</a></div>
-          <a href="https://mail.google.com/">email</a><a href="github.com">github</a>
+        <h2> Check me at: </h2>
+        <div class="contact">
+          <a href="https://www.linkedin.com/in/samuel-raoul-djiani-0a78b1a2/" class="styleGraphicon">
+            <i class="fa fa-linkedin-square "> LINKEDIN</i>
+          </a>
+        </div>
+
+        <div class="contact">
+          <a href="https://github.com/djiani" class="styleGraphicon">
+            <i class="fa fa-github-square ">GITHUB</i>
+          </a>
+        </div>
+        <div >
+          <h2> Email at: <span class="">djiasara@gmail.com</span>
+        </div>
       </div>
-    </div>
+    </div>  
   </div>
 </header>
 
-<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="100" >
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="100">
   <div class="container-fluid">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -60,8 +73,47 @@
 </nav>    
 
 <div id="bio" class="container-fluid">
-  <h1>Here's a little bit about me</h1>
-  <p> Short description about me</p>
+  <div class="bio_desc">
+    <h1>Here's a little bit about me</h1>
+    <p> Since my earlier age, creativity, innovation, and learning new technology has always been my keen value; coding and problem solving my passion. I always love to challenge myself on inovative and interestings projects and develop(or being part )technology that can dramatically improve our daily life and why not our century. I consider as self-displine, optimitist and details-oriented. </p>
+
+    <p>If you want to know more about me, check below my resume </p>
+  <button class="btn btn-default viewpdf">view my resume!</button>
+  </div>
+  <!-- modal to display pdf cv -->
+        <div class="modal fade" id="pdfModal" role="dialog">
+          <div class="modal-dialog modal-dialog_pdf">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2 class="modal_headerName"></h2>
+              </div>
+
+              <div class="modal-body" >
+                <div id="pdf-contents">
+                  <div class="js_users_more_details"></div>
+                  <div class="pdf_modal">
+                    <div id="pdf-buttons">
+                      <button id="pdf-prev" class="btn btn-default">Previous</button>
+                      <button id="pdf-next" class="btn btn-default">Next</button>
+                    </div>
+                    <canvas id="pdf-canvas" width="800" ></canvas>
+                    <div id="pdf-meta"> 
+                      <div id="page-count-container">Page <div id="pdf-current-page"></div> of <div id="pdf-total-pages"></div></div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
 
 </div>
 <div id="projects" class="container-fluid">
@@ -167,6 +219,10 @@
 <footer class="container-fluid bg-4 text-center">
   <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
 </footer>
+
+<script type="text/javascript" src="pdf.js"></script>
+<script type="text/javascript" src="pdf.worker.js"></script>
+<script type="text/javascript" src="pdf_viewer2.js"></script>
 <script type="text/javascript" src="index.js"></script>
 
 </body>
