@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bootstrap Example</title>
+  <title>Samuel's Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -24,9 +24,9 @@
       <h1>Samuel Raoul Djiani</h1>
     </div>
     <div class="col-sx-12 col-sm-6">
-      <h1>I'm an ambitous Software Developer </h1>
+      <h1>I'm a full stack developer </h1>
       <div class="goal">
-        <h3>who love to build :<br> <span class="animated_text">Creative and simple solutions</span></h3>
+        <h3>who love to build ...<br> <span class="animated_text">Creative and simple solutions</span></h3>
       </div>
 
       <div>
@@ -50,36 +50,15 @@
   </div>
 </header>
 
-<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="100">
-  <div class="container-fluid">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">DSR</a>
-    </div>
-    <div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav pull-right">
-          <li><a href="#bio">Bio </a></li>
-          <li><a href="#projects">My Projects</a></li>
-          <li><a href="#skills">Dev skills</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</nav>    
+    
 
 <div id="bio" class="container-fluid">
+  <h1 class="bio_header">Here's a little bit about me</h1>
   <div class="bio_desc">
-    <h1>Here's a little bit about me</h1>
-    <p> Since my earlier age, creativity, innovation, and learning new technology has always been my keen value; coding and problem solving my passion. I always love to challenge myself on inovative and interestings projects and develop(or being part )technology that can dramatically improve our daily life and why not our century. I consider as self-displine, optimitist and details-oriented. </p>
-
-    <p>If you want to know more about me, check below my resume </p>
-  <button class="btn btn-default viewpdf">view my resume!</button>
+    <p>   Since my earlier age, creativity, innovation, and learning new technology has always been my keen value; coding and problem solving my passion. I love to challenge myself on innovative and interesting projects and it is always a supremely satisfaction to see ideas come to life.</p> 
+    <p>   I consider myself as self-discipline, optimistic and detailed-oriented. I like outdoors adventures, new discoveries, sports events</p>
   </div>
+  <h2> <a class=" viewpdf bio_link">Learn more about me!</a></h2>
   <!-- modal to display pdf cv -->
         <div class="modal fade" id="pdfModal" role="dialog">
           <div class="modal-dialog modal-dialog_pdf">
@@ -109,33 +88,37 @@
               </div>
               <div class="modal-footer">
                 <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-                
               </div>
             </div>
           </div>
         </div>
 
 </div>
-<div id="projects" class="container-fluid">
+<div id="projects" class="container-fluid projects">
   <h1> My Projects</h1>
   <div class="row project">
     
     <div class="col-sx-12 col-sm-8 img_project_block">
-      <h2> EventLocalizer (<a href="">Live</a>  <a href="">source code</a>)</h2>
-      <img src="image/eventloc_screenshot.png" alt="project EventLocalizer" class="img_project">
+      <h2> MyFavoriteMeal (<a href="">Live</a>,  <a href="">source code</a>)</h2>
+      <img src="image/eventloc_screenshot.png" alt="project MyFavoriteMeal" class="img_project">
     </div>
     <div class="col-sx-12 col-sm-4 des_project">
       <h2>Technologies Used:</h2>
       <ul class="list_tech">
-        <li>Html5/CSS</li>
-        <li>Boostrap</li>
-        <li>AJAX Call</li>
-        <li>JQuery Traversal & DOM Manipulation</li>
-        <li>Open Api</li>
+        <li>Html5/CSS/Boostrap/JQuery</li>
+        <li>React/Redux</li>
+        <li>Nodejs, Express</li>
+        <li>Mongodb/mongoose</li>
+        <li>Mocha/Chai</li>
+        <li>AWS S3/</li>
       </ul> 
       <h2>Project description</h2>
       <p>
-        Are You boring? Do you want to hangout but don't know where to go? Did you just move to a new community? Are you curious about what is going on around you or around your favor location? Are you looking for specific event? If yes, EventLocalizer is a great app for you. This web apps allows users to find all current or upcomming events in his preferable location.
+        My myFavoriteMeal is a social platform where you, the user can impact your community and friendship by sharing with them your food habits and taste's preferences. 
+        what do you like the most to eat for breakfast, lunch, and/or dinner? 
+        Are you out of inspiration about what to eat today? check this app to fill you hunger pangs by seeing what you friends are eating! 
+        are you curious, or would you like to try something new by yourself? 
+        Check some recipes from your community and trying it yourself.  "Cooking is an art".
       </p>
     </div>
     
@@ -144,7 +127,7 @@
    <div class="row project">
     
     <div class="col-sx-12 col-sm-8 img_project_block">
-      <h2> Cameroon Research Platform (<a href="">Live</a>  <a href="">source code</a>)</h2>
+      <h2> Cameroon Research Platform (<a href="">Live</a>,  <a href="">source code</a>)</h2>
       <img src="image/univprof_screen1.png" alt="project univProf" class="img_project">
     </div>
     <div class="col-sx-12 col-sm-4 des_project">
@@ -154,10 +137,11 @@
         <li>Nodejs, Express</li>
         <li>Mongodb/mongoose</li>
         <li>Mocha/Chai</li>
+        <li>AWS S3/</li>
       </ul> 
       <h2>Project description</h2>
       <p>
-        As today, There is not a common platform where you can find cameroon professors or african professors, except those who teach out of the continent. And therefore, it is more challenging to find an African project with to collaborate on project or to simply know what there are working on. Cameroon Research Platform is a web platform design in the first place to share and promote Cameroonian professors but also, african professors and all university profossors and researchers who would like to collaborate with others professors around the world or who would like to share its research interest. We encourage all cameroonian professors, all african professors, or any professor to register to this app and upload his cv, a short description about himselft, and fill out a summary about his research insterest in other to build a strong network. 
+       As today, there is not a common online platform where you can find Cameroon professors or African professors, except those who teach out of the continent. And therefore, it is more challenging to find an African professor with who to collaborate on projects, know who they are, and what they are working on. Cameroon Research Platform is a web platform design in the first place to share and promote Cameroonian professors but also, African professors and all university professors and researchers who would like to collaborate with other professors around the world or who would like to share their experience and professionalism. We encourage all Cameroonian professors, all African professors, or any professor to register to this app by sharing their cv, biography, a summary of theirs research interest. 
       </p>
     </div>
     
@@ -166,7 +150,7 @@
    <div class="row project">
     
     <div class="col-sx-12 col-sm-8 img_project_block">
-      <h2> EventLocalizer (<a href="">Live</a>  <a href="">source code</a>) </h2>
+      <h2> EventLocalizer (<a href="">Live</a>, <a href="">source code</a>) </h2>
       <img src="image/eventloc_screenshot.png" alt="project EventLocalizer" class="img_project">
     </div>
     <div class="col-sx-12 col-sm-4 des_project">
@@ -180,44 +164,167 @@
       </ul> 
       <h2>Project description</h2>
       <p>
-        Are You boring? Do you want to hangout but don't know where to go? Did you just move to a new community? Are you curious about what is going on around you or around your favor location? Are you looking for specific event? If yes, EventLocalizer is a great app for you. This web apps allows users to find all current or upcomming events in his preferable location.
+        Are You boring? Do you want to hangout but don't know where to go? Did you just move to a new community? Are you curious about what is going on around you or around your favor location? Are you looking for specific event? If yes, EventLocalizer is a great app for you. This web apps allows you to find all current or upcoming events in your preferable location. It helps you socialize with your community by informing you about all events that is taking place around you. 
       </p>
     </div>
     
   </div>
 </div>
+
+
 <div id="skills" class="container-fluid">
-  <h1>My Dev Skills</h1>
-  <div class="skill">
-  <h3>Front End Developement</h3>
-  <p>Html, CSS, bootstrap, JQuery, ES6, React </p>
+  <h1 class="skill_header">My Dev Skills</h1>
+  <div class="well skill">
+    <div class="row">
+      <div class="col-sx-12 col-sm-4 skill_title">
+        <h3>Front End Developement</h3>
+      </div>
+      <div class="col-sx-12 col-sm-4 ">
+        <span class="skill_elt glyphicon glyphicon-ok">HTML5 </span>
+        <span class="skill_elt glyphicon glyphicon-ok">CSS </span>
+        <span class="skill_elt glyphicon glyphicon-ok">Bootstrap </span>
+      </div>
+      <div class="col-sx-12 col-sm-4 skill_elts">
+         <span class="skill_elt glyphicon glyphicon-ok">Javascript </span>
+        <span class="skill_elt glyphicon glyphicon-ok">JQuery </span>
+        <span class="skill_elt glyphicon glyphicon-ok">React </span>
+        <span class="skill_elt glyphicon glyphicon-ok">ES6</span>
+      </div>
+    </div>
+    <div class="row skill_desc">
+      <p> Front-end tools to build interative, responsive mobile first principes, well designed and style webpage or web-apps. I always took into account accessibility by following a1l principes.</p>
+    </div>
   </div>
 
-  <div class="skill">
-  <h3>Back End Developement</h3>
-  <p>Restful API, Nodejs, express, Mongodb, Mongoose </p>
+  <div class="well skill">
+    <div class="row ">
+      <div class="col-sx-12 col-sm-4 skill_title">
+        <h3>Back End Developement</h3>
+      </div>
+      <div class="col-sx-12 col-sm-4 ">
+        <span class="skill_elt glyphicon glyphicon-ok">Restful API </span>
+        <span class="skill_elt glyphicon glyphicon-ok">NodeJs </span>
+        <span class="skill_elt glyphicon glyphicon-ok">Express </span>
+      </div>
+      <div class="col-sx-12 col-sm-4 ">
+        <span class="skill_elt glyphicon glyphicon-ok">Mongodb </span>
+        <span class="skill_elt glyphicon glyphicon-ok">Mongoose </span>
+      </div>
+    </div>
+    <div class="row skill_desc">
+      <p> Back-end technologies to build full stack web apps with Restful Api using Nodejs and Express and server framework and support CRUD operations. Mongodb database is used to service the data  to the apps layer.</p>
+    </div>
   </div>
-  <div class="skill">
-  <h3>Authentification</h3>
-  <p>passport, bcrypt </p>
+
+  <div class="well skill ">
+    <div class="row">
+      <div class="col-sx-12 col-sm-4 skill_title">
+        <h3>Authentification</h3>
+      </div>
+      <div class="col-sx-12 col-sm-8 ">
+        <span class="skill_elt glyphicon glyphicon-ok">passport </span>
+        <span class="skill_elt glyphicon glyphicon-ok">bcrypt </span>
+      </div>
+    </div>
+    <div class="row skill_desc">
+      <p> Passwort is used to manage resources authentification and sensible data such user password are encrupted using bcrypt frameworks </p>
+    </div>
   </div>
-  <div class="skill">
-  <h3>Developement Environment</h3>
-  <p>Chrome Dev-tools, cmd-line, Git, npm, Mocha, travis CL, heroku, Netlify, Aws S3 </p>
+
+  <div class="well skill">
+    <div class="row">
+      <div class="col-sx-12 col-sm-4 skill_title">
+        <h3> Web Delopement Environment</h3>
+      </div>
+      <div class="col-sx-12 col-sm-4 ">
+        <span class="skill_elt glyphicon glyphicon-ok">Chrome Dev-tools </span>
+        <span class="skill_elt glyphicon glyphicon-ok">Git </span>
+        <span class="skill_elt glyphicon glyphicon-ok">npm </span>
+        <span class="skill_elt glyphicon glyphicon-ok">Mocha </span>
+        <span class="skill_elt glyphicon glyphicon-ok">Chai </span>
+      </div>
+      <div class="col-sx-12 col-sm-4 ">
+        <span class="skill_elt glyphicon glyphicon-ok">Travis CL </span>
+        <span class="skill_elt glyphicon glyphicon-ok">Heroku </span>
+        <span class="skill_elt glyphicon glyphicon-ok">Netlify </span>
+        <span class="skill_elt glyphicon glyphicon-ok">AWS S3 </span>
+      </div>
+    </div>
+    <div class="row">
+      
+    </div>
   </div>
-  <div class="skill">
-  <h3>Web Architecture Principles</h3>
-  <p>Mobile first, Responsive web design, cross-browser compatibily, Accessibility </p>
+
+  <div class="well skill">
+    <div class="row ">
+      <div class="col-sx-12 col-sm-4 skill_title">
+        <h3> Web Architecture Principles</h3>
+      </div>
+      <div class="col-sx-12 col-sm-8 ">
+        <span class="skill_elt glyphicon glyphicon-ok">Mobile First Design</span>
+        <span class="skill_elt glyphicon glyphicon-ok">Responsive web design </span>
+        <span class="skill_elt glyphicon glyphicon-ok">cross-browser compatibily </span>
+        <span class="skill_elt glyphicon glyphicon-ok">Accessibility </span>
+        <span class="skill_elt glyphicon glyphicon-ok">Chai </span>
+      </div>
+     </div>
+    <div class="row">
+    
+    </div>
   </div>
-  <h3>others well know language and technologies</h3>
-  <p>Java, python, c/c++, matlab, R </p>
+  
+  <div class="well skill">
+    <div class="row">
+      <div class="col-sx-12 col-sm-4 skill_title">
+        <h3> Others Technologies and Languges</h3>
+      </div>
+      <div class="col-sx-12 col-sm-8 ">
+        <span class="skill_elt glyphicon glyphicon-ok">Java</span>
+        <span class="skill_elt glyphicon glyphicon-ok">Python </span>
+        <span class="skill_elt glyphicon glyphicon-ok">C/C++ </span>
+        <span class="skill_elt glyphicon glyphicon-ok">Matlab </span>
+        <span class="skill_elt glyphicon glyphicon-ok">R </span>
+      </div>
+    </div>
+    <div class="row">
+      
+    </div>
   </div>
+  
 </div>
 
 
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="100">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">DSR</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav pull-right">
+          <li><a href="#bio">Bio </a></li>
+          <li><a href="#projects">My Projects</a></li>
+          <li><a href="#skills">Dev skills</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
 <!-- Footer -->
-<footer class="container-fluid bg-4 text-center">
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
+<footer class="container-fluid bg-4 ">
+  <h4>Like my works? 
+    Find me on <a href="https://www.linkedin.com/in/samuel-raoul-djiani-0a78b1a2/" class="">
+        LINKEDIN <i class="fa fa-linkedin-square "> </i>
+    </a> or on 
+    <a href="https://github.com/djiani" class="">
+          GITHUB <i class="fa fa-github-square "></i>
+          </a> 
+  </h4> 
 </footer>
 
 <script type="text/javascript" src="pdf.js"></script>
