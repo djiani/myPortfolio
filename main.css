@@ -148,8 +148,13 @@ body{
   display: inline-block;
   width: 20%;
   text-align: left;
+  overflow: hidden;
 
 
+}
+
+.skill ul li{
+  list-style-type: none;
 }
 
 /* contact */
@@ -158,12 +163,29 @@ body{
   padding-top: 1px;
   text-align: center;
   min-height: 200px;
-  background-color: #F7F7F7;
+  /*background-color: #F7F7F7;*/
+  
+}
+
+.contact_icon{
+  font-size: 3em;
+  margin: 10px;
+}
+
+.contact_icon a{
+  color: #FEFE33;
 }
 
 
 @media only screen and (max-width: 768px){
-
+  .img_project_block, .des_project{
+    width: 100%;
+    padding-left: 0px;
+  }
+  
+  .desc_project_p{
+    padding: 10px;
+  }
 
 
 }
