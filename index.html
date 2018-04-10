@@ -4,114 +4,59 @@
   <title>Samuel's Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="main.css">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body >
 
-<header class="container-fluid intro" role="banner">
-  <div class="row"> 
-    <div class="col-sx-12 col-sm-5 col-sm-offset-1 container2">
-      <img src="https://s3.us-east-2.amazonaws.com/myfavoritemealaws/products/portfolio_img/sam.jpg" class="img-responsive img-circle  container_image" style="display:inline" alt="profile" >
+<div class="topNav">
+    <a href="#bio"> About Me</a>
+    <a href="#projects">Portfolio</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</div>
 
-      <div class="overlay img-responsive img-circle">
-        <div class="text">Hiring me!</div>
-      </div>
-      <h1>Samuel Raoul Djiani</h1>
-    </div>
-    <div class="col-sx-12 col-sm-6">
-      <h1>I'm a full stack developer </h1>
-      <div class="goal">
-        <h3>who love to build ...<br> <span class="animated_text">Creative and simple solutions</span></h3>
-      </div>
-
-      <div>
-        <h2> Check me at: </h2>
-        <div class="contact">
-          <a href="https://www.linkedin.com/in/samuel-raoul-djiani-0a78b1a2/" class="styleGraphicon">
-            <i class="fa fa-linkedin-square "> LINKEDIN</i>
-          </a>
-        </div>
-
-        <div class="contact">
-          <a href="https://github.com/djiani" class="styleGraphicon">
-            <i class="fa fa-github-square ">GITHUB</i>
-          </a>
-        </div>
-        <div >
-          <h2> Email at: <span class="">djiasara@gmail.com</span>
-        </div>
-      </div>
-    </div>  
+<div class="section jumbotron">
+  <div class="jumbotron_image_block">
+    <img src="./image/sam.jpg" class="jumbotron_image">
   </div>
-</header>
-
+  <div class="jumbotron_title">
+    <span class="jumbotron_name">Samuel Raoul Djiani</span>
+    <span class="jumbotron_name">Full Stack Developer</span>
+  </div>
+  <div class="jumbotron_desc">
+    <h3>Thanks for visiting!!!</h3>
     
+  </div>
+  
+</div>
 
-<div id="bio" class="container-fluid">
+<div id="bio" class="">
   <h1 class="bio_header">Here's a little bit about me</h1>
   <div class="bio_desc">
     <p>   Since my earlier age, creativity, innovation, and learning new technology has always been my keen value; coding and problem solving my passion. I love to challenge myself on innovative and interesting projects and it is always a supremely satisfaction to see ideas come to life.</p> 
     <p>   I consider myself as self-discipline, optimistic and detailed-oriented. I like outdoors adventures, new discoveries, sports events</p>
   </div>
-  <h2> <a class=" viewpdf bio_link">Learn more about me!</a></h2>
-  <!-- modal to display pdf cv -->
-        <div class="modal fade" id="pdfModal" role="dialog">
-          <div class="modal-dialog modal-dialog_pdf">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h2 class="modal_headerName"></h2>
-              </div>
-
-              <div class="modal-body" >
-                <div id="pdf-contents">
-                  <div class="js_users_more_details"></div>
-                  <div class="pdf_modal">
-                    <div id="pdf-buttons">
-                      <button id="pdf-prev" class="btn btn-default">Previous</button>
-                      <button id="pdf-next" class="btn btn-default">Next</button>
-                    </div>
-                    <canvas id="pdf-canvas" width="800" ></canvas>
-                    <div id="pdf-meta"> 
-                      <div id="page-count-container">Page <div id="pdf-current-page"></div> of <div id="pdf-total-pages"></div></div>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
 </div>
-<div id="projects" class="container-fluid projects">
+
+<div id="projects" class="section">
   <h1> My Projects</h1>
-  <div class="row project">
+  <div class="project">
+    <h2> MyFavoriteMeal (<a href="https://loving-spence-e18248.netlify.com">Live</a>,  <a href="https://github.com/djiani/myfavoritemeal_client">source code</a>)</h2>
     
-    <div class="col-sx-12 col-sm-8 img_project_block">
-      <h2> MyFavoriteMeal (<a href="https://loving-spence-e18248.netlify.com">Live</a>,  <a href="https://github.com/djiani/myfavoritemeal_client">source code</a>)</h2>
-      <img src="https://s3.us-east-2.amazonaws.com/myfavoritemealaws/products/portfolio_img/myfavoritemeal.png" alt="project MyFavoriteMeal" class="img_project">
+    <div class="img_project_block">
+      <img src="./image/myfavoritemeal.png" alt="MyFavoriteMeal" class="img_project">
     </div>
-    <div class="col-sx-12 col-sm-4 des_project">
+    <div class=" des_project">
       <h2>Technologies Used:</h2>
-      <ul class="list_tech">
-        <li>Html5/CSS/Bootstrap/JQuery</li>
-        <li>React/Redux</li>
-        <li>Nodejs, Express</li>
-        <li>Mongodb/mongoose</li>
-        <li>Mocha/Chai</li>
-        <li>AWS S3/</li>
-      </ul> 
+      <div class="list_tech">
+        <span> Html5/CSS/Bootstrap/JQuery</span>
+        <span>React/Redux</span>
+        <span>Nodejs, Express</span>
+        <span>Mongodb/mongoose</span>
+        <span>Mocha/Chai</span>
+        <span>AWS S3/</span>
+      </div> 
       <h2>Project description</h2>
       <p>
         My myFavoriteMeal is a social platform where you, the user can impact your community and friendship by sharing with them your food habits and taste's preferences. 
@@ -124,21 +69,21 @@
     
   </div>
 
-   <div class="row project">
-    
-    <div class="col-sx-12 col-sm-8 img_project_block">
-      <h2> Cameroon Research Platform (<a href="https://guarded-spire-92095.herokuapp.com/">Live</a>,  <a href="https://github.com/djiani/univProf">source code</a></h2>
-      <img src="https://s3.us-east-2.amazonaws.com/myfavoritemealaws/products/portfolio_img/univprof.png" alt="project univProf" class="img_project">
+   <div class="project">
+    <h2> Cameroon Research Platform (<a href="https://guarded-spire-92095.herokuapp.com/">Live</a>,  <a href="https://github.com/djiani/univProf">source code</a></h2>
+    <div class="img_project_block">
+      
+      <img src="./image/univprof.png" alt="project univProf" class="img_project">
     </div>
     <div class="col-sx-12 col-sm-4 des_project">
       <h2>Technologies Used:</h2>
-      <ul class="list_tech">
-        <li>Html5/CSS/Bootstrap/JQuery</li>
-        <li>Nodejs, Express</li>
-        <li>Mongodb/mongoose</li>
-        <li>Mocha/Chai</li>
-        <li>AWS S3</li>
-      </ul> 
+      <div class="list_tech">
+        <span>Html5/CSS/Bootstrap/JQuery</span>
+        <span>Nodejs, Express</span>
+        <span>Mongodb/mongoose</span>
+        <span>Mocha/Chai</span>
+        <span>AWS S3</span>
+      </div> 
       <h2>Project description</h2>
       <p>
        As today, there is not a common online platform where you can find Cameroonian or African professors, except those who teach out of the continent. And therefore, it is more challenging to get in contact with most African professors with who to collaborate on projects, know who they are, and what they are working on. Cameroon Research Platform is a web platform design in the first place to share and promote Cameroonian professors but also, African professors and all university professors and researchers who would like to collaborate with other professors around the world or who would like to share their experience and professionalism. We encourage all Cameroonian professors, all African professors, or any professor to register to this app by sharing their cv, biography, and a summary of theirs research interest. 
@@ -148,20 +93,19 @@
   </div>
   
    <div class="row project">
-    
-    <div class="col-sx-12 col-sm-8 img_project_block">
-      <h2> EventLocalizer (<a href="https://djiani.github.io/EventLocalizer/">Live</a>, <a href="https://github.com/djiani/EventLocalizer">source code</a>) </h2>
-      <img src="https://s3.us-east-2.amazonaws.com/myfavoritemealaws/products/portfolio_img/eventlocalizer.png" alt="project EventLocalizer" class="img_project">
+    <h2> EventLocalizer (<a href="https://djiani.github.io/EventLocalizer/">Live</a>, <a href="https://github.com/djiani/EventLocalizer">source code</a>) </h2>
+    <div class="img_project_block">
+      <img src="./image/eventlocalizer.png" alt="project EventLocalizer" class="img_project">
     </div>
-    <div class="col-sx-12 col-sm-4 des_project">
+    <div class="des_project">
       <h2>Technologies Used:</h2>
-      <ul class="list_tech">
-        <li>Html5/CSS</li>
-        <li>Bootstrap</li>
-        <li>AJAX Call</li>
-        <li>JQuery Traversal & DOM Manipulation</li>
-        <li>Open Api</li>
-      </ul> 
+      <div class="list_tech">
+        <span>Html5/CSS</span>
+        <span>Bootstrap</span>
+        <span>AJAX Call</span>
+        <span>JQuery Traversal & DOM Manipulation</span>
+        <span>Open Api</span>
+      </div> 
       <h2>Project description</h2>
       <p>
         Are You boring? Do you want to hangout but don't know where to go? Did you just move to a new town? Are you curious about what is going on around you? Are you looking for specific type of events? If yes, EventLocalizer is a great app for you. This web apps allows you to find all current or upcoming events near you.This web-app helps users to socialize with their community. 
@@ -171,152 +115,12 @@
   </div>
 </div>
 
-
-<div id="skills" class="container-fluid">
-  <h1 class="skill_header">My Dev Skills</h1>
-  <div class="well skill">
-    <div class="row">
-      <div class="col-sx-12 col-sm-4 skill_title">
-        <h3>Front End Developement</h3>
-      </div>
-      <div class="col-sx-12 col-sm-4 ">
-        <span class="skill_elt glyphicon glyphicon-ok">HTML5 </span>
-        <span class="skill_elt glyphicon glyphicon-ok">CSS </span>
-        <span class="skill_elt glyphicon glyphicon-ok">Bootstrap </span>
-      </div>
-      <div class="col-sx-12 col-sm-4 skill_elts">
-         <span class="skill_elt glyphicon glyphicon-ok">Javascript </span>
-        <span class="skill_elt glyphicon glyphicon-ok">JQuery </span>
-        <span class="skill_elt glyphicon glyphicon-ok">React </span>
-        <span class="skill_elt glyphicon glyphicon-ok">ES6</span>
-      </div>
-    </div>
-    <div class="row skill_desc">
-      <p> Front-end tools to build interactive, responsive,  mobile first, well designed and style webpage or web-apps. I always took into account accessibility by following a11Y principles.</p>
-    </div>
-  </div>
-
-  <div class="well skill">
-    <div class="row ">
-      <div class="col-sx-12 col-sm-4 skill_title">
-        <h3>Back End Developement</h3>
-      </div>
-      <div class="col-sx-12 col-sm-4 ">
-        <span class="skill_elt glyphicon glyphicon-ok">Restful API </span>
-        <span class="skill_elt glyphicon glyphicon-ok">NodeJs </span>
-        <span class="skill_elt glyphicon glyphicon-ok">Express </span>
-      </div>
-      <div class="col-sx-12 col-sm-4 ">
-        <span class="skill_elt glyphicon glyphicon-ok">Mongodb </span>
-        <span class="skill_elt glyphicon glyphicon-ok">Mongoose </span>
-      </div>
-    </div>
-    <div class="row skill_desc">
-      <p> Back-end technologies use to build full stack web apps with Restful Api that supports CRUD operations using Nodejs and Express as server framework. Mongodb database is used to service the data  to the apps layer</p>
-    </div>
-  </div>
-
-  <div class="well skill ">
-    <div class="row">
-      <div class="col-sx-12 col-sm-4 skill_title">
-        <h3>Authentification</h3>
-      </div>
-      <div class="col-sx-12 col-sm-8 ">
-        <span class="skill_elt glyphicon glyphicon-ok">passport </span>
-        <span class="skill_elt glyphicon glyphicon-ok">bcrypt </span>
-      </div>
-    </div>
-    <div class="row skill_desc">
-      <p> Passport is used to manage authentication for private resources and granted access only to authorize users.  Any sensible data is encrypted using bcrypt frameworks </p>
-    </div>
-  </div>
-
-  <div class="well skill">
-    <div class="row">
-      <div class="col-sx-12 col-sm-4 skill_title">
-        <h3> Web Delopement Environment</h3>
-      </div>
-      <div class="col-sx-12 col-sm-4 ">
-        <span class="skill_elt glyphicon glyphicon-ok">Chrome Dev-tools </span>
-        <span class="skill_elt glyphicon glyphicon-ok">Git </span>
-        <span class="skill_elt glyphicon glyphicon-ok">npm </span>
-        <span class="skill_elt glyphicon glyphicon-ok">Mocha </span>
-        <span class="skill_elt glyphicon glyphicon-ok">Chai </span>
-      </div>
-      <div class="col-sx-12 col-sm-4 ">
-        <span class="skill_elt glyphicon glyphicon-ok">Travis CL </span>
-        <span class="skill_elt glyphicon glyphicon-ok">Heroku </span>
-        <span class="skill_elt glyphicon glyphicon-ok">Netlify </span>
-        <span class="skill_elt glyphicon glyphicon-ok">AWS S3 </span>
-      </div>
-    </div>
-    <div class="row">
-      
-    </div>
-  </div>
-
-  <div class="well skill">
-    <div class="row ">
-      <div class="col-sx-12 col-sm-4 skill_title">
-        <h3> Web Architecture Principles</h3>
-      </div>
-      <div class="col-sx-12 col-sm-8 ">
-        <span class="skill_elt glyphicon glyphicon-ok">Mobile First Design</span>
-        <span class="skill_elt glyphicon glyphicon-ok">Responsive web design </span>
-        <span class="skill_elt glyphicon glyphicon-ok">cross-browser compatibily </span>
-        <span class="skill_elt glyphicon glyphicon-ok">Accessibility </span>
-        <span class="skill_elt glyphicon glyphicon-ok">Chai </span>
-      </div>
-     </div>
-    <div class="row">
-    
-    </div>
-  </div>
-  
-  <div class="well skill">
-    <div class="row">
-      <div class="col-sx-12 col-sm-4 skill_title">
-        <h3> Others Technologies and Languges</h3>
-      </div>
-      <div class="col-sx-12 col-sm-8 ">
-        <span class="skill_elt glyphicon glyphicon-ok">Java</span>
-        <span class="skill_elt glyphicon glyphicon-ok">Python </span>
-        <span class="skill_elt glyphicon glyphicon-ok">C/C </span>++
-        <span class="skill_elt glyphicon glyphicon-ok">Matlab </span>
-        <span class="skill_elt glyphicon glyphicon-ok">R </span>
-      </div>
-    </div>
-    <div class="row">
-      
-    </div>
-  </div>
+<div id="skills">
+  my skills here !!!
   
 </div>
 
-
-<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="100">
-  <div class="container-fluid">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">DSR</a>
-    </div>
-    <div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav pull-right">
-          <li><a href="#bio">Bio </a></li>
-          <li><a href="#projects">My Projects</a></li>
-          <li><a href="#skills">Dev skills</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</nav>
-<!-- Footer -->
-<footer class="container-fluid bg-4 ">
+<div id="contact">
   <h4>Like my works? 
     Find me on <a href="https://www.linkedin.com/in/samuel-raoul-djiani-0a78b1a2/" class="">
         LINKEDIN <i class="fa fa-linkedin-square "> </i>
@@ -325,11 +129,7 @@
           GITHUB <i class="fa fa-github-square "></i>
           </a> 
   </h4> 
-</footer>
-
-<script type="text/javascript" src="pdf.js"></script>
-<script type="text/javascript" src="pdf.worker.js"></script>
-<script type="text/javascript" src="pdf_viewer2.js"></script>
+<div>
 <script type="text/javascript" src="index.js"></script>
 
 </body>
