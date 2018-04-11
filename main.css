@@ -11,7 +11,7 @@ body{
   top: 0px;
   width: 100%;
   background-color: #333;
-  height: 50px;
+  height: 60px;
   margin-right: 0px;
   margin-left: -8px;
 }
@@ -19,57 +19,60 @@ body{
 .topNav a {
     float: right;
     display: block;
+    font-size: 2vw;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 15px;
     text-decoration: none;
 }
 
-.navbar a:hover {
+.topNav a:hover {
     background: #ddd;
     color: black;
 }
-
 .section{
   width: 100%;
   min-height: 500px;
 }
-
 .jumbotron{
   min-height: 500px;
-  margin-top: 2%;
+  margin-top: 20px;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.row{
+  height: 300px;
+  width: 100%;
+  padding-top: 50px;
 }
 .jumbotron_image_block{
-  height: 70%;
-  padding-top: 50px;
-  padding-right: 20px;
+  height: 100%;
+  width: 30%;
   display: inline-block;
-  margin:0 auto; 
+  margin:0 auto;
+   
 }
 .jumbotron_title{
-  height: 70%;
-  padding-top: 50px;
+  height: 100%;
+  width: 60%;
   display: inline-block;
   vertical-align: top;
-
 }
 
-.jumbotron_name{
-  display: block;
-  font-size: 3em;
-  padding-top: 40px;
+.jumbotron_h{
   color: #FEFE33;
+  font-size: 5vw;
 }
+
 .jumbotron_image{
-  width: 70%;
+  width: 100%;
   height: 100%;
   border-radius: 50px;
 }
 
 .jumbotron_desc{
-    font-size: 1.5em;
-    color: white;
+  font-size: 3vw;
+  padding-top: 50px;
 }
 
 /* bio  */
@@ -79,7 +82,7 @@ body{
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #B2D732;
-  min-height:  300px;
+  min-height:  200px;
   text-align: center;
 }
 
@@ -137,7 +140,7 @@ body{
 
 /* skills  */
 #skills{
-  padding-top: 10px;
+  padding-top: 1px;
   min-height: 300px;
   background-color: #B2D732;
   text-align: center;
@@ -146,13 +149,16 @@ body{
 }
 .skill{
   display: inline-block;
-  width: 20%;
+  width: 23%;
   text-align: left;
   overflow: hidden;
+  vertical-align: top;
 
 
 }
-
+.skill ul{
+  padding-left: 10px;
+}
 .skill ul li{
   list-style-type: none;
 }
@@ -163,8 +169,13 @@ body{
   padding-top: 1px;
   text-align: center;
   min-height: 200px;
-  /*background-color: #F7F7F7;*/
-  
+  background-color: rgba(255, 255, 255, 0.4);
+   
+}
+
+.contact_text{
+  font-weight: bold;
+  color: #000000;
 }
 
 .contact_icon{
@@ -178,6 +189,12 @@ body{
 
 
 @media only screen and (max-width: 768px){
+  /*.jumbotron_h{
+    font-size: 2.5em;
+  }*/
+  .jumbotron_image{
+    height: auto;
+  }
   .img_project_block, .des_project{
     width: 100%;
     padding-left: 0px;
@@ -190,9 +207,30 @@ body{
 
 }
 
-@media only screen and (max-width: 564px){
+@media only screen and (max-width: 576px){
+  .jumbotron{
+    min-height: 300px;
+  }
+  .row{
+    height: 200px;
+  }
+  /*.jumbotron_h{
+    font-size: 2em;
+  }*/
 
+  .jumbotron_image, .jumbotron-title{
+    height: 80%;
+  }
+  .jumbotron_desc{
+    padding-top: 0px;
+    
+  }
 
+  .bio_desc{
+    width: 90%;
+    font-size: 1em;
 
+  }
+  
  
 }
