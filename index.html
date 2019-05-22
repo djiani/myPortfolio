@@ -1,196 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Samuel's Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
-<body >
 
-<div class="topNav">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <!--<div class="topNav">
     <a href="#contact">Contact</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Portfolio</a>
     <a href="#bio"> About Me</a>
     
-</div>
+</div>-->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <!-- Brand -->
+    <div class="container">
+      <a class="navbar-brand" href="#">Samuel Djiani</a>
 
-<div class="jumbotron">
-  <div class="row">
-    <div class="jumbotron_image_block">
-      <img src="./image/sam.jpg" class="jumbotron_image">
-    </div>
-    <div class="jumbotron_title">
-      <h1 class="jumbotron_h" >Samuel Raoul Djiani</h1>
-      <hr>
-      <hr>
-      <h2 class="jumbotron_h2">Full Stack Developer</h2>
-    </div>
-  </div>
-  <div class="jumbotron_desc">
-    <h4>Thanks for visiting!!!</h4>
-    
-  </div>
-  
-</div>
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<div id="bio" class="">
-  <h1 class="bio_header">Here's a little bit about me</h1>
-  <div class="bio_desc">
-    <p>   Since a young age, creativity, innovation, and learning new technology has always been important to me; coding and problem solving are my passion. I love to challenge myself on innovative and interesting projects and it is always satisfying to see ideas come to life.
-
-I consider myself to be very self-disciplined, optimistic, and detailed-oriented. I enjoy outdoors adventures, new discoveries, and sports events.</p>
-  </div>
-</div>
-
-<div id="projects" class="section">
-  <h1> My Projects</h1>
-  <div class="project">
-    <h2> MyFavoriteMeal (<a href="https://loving-spence-e18248.netlify.com">Live</a>,  <a href="https://github.com/djiani/myfavoritemeal_client">source code</a>)</h2>
-
-    <div class="img_project_block">
-      <img src="./image/myfavoritemeal.png" alt="MyFavoriteMeal" class="img_project">
-    </div>
-    <div class=" des_project">
-      <div class="list_tech">
-        <h2>Technologies Used:</h2>
-        <span> HTML5, CSS, Bootstrap, JQuery, </span>
-        <span>React/Redux, </span>
-        <span>Nodejs, Express</span>
-        <span>Mongodb, </span>
-        <span>Mocha/Chai, </span>
-        <span>AWS-S3</span>
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#bio">AboutMe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
 
-      <div class="desc_project_p">
-        <h2>Project Description</h2>
-        <p>
-          MyFavoriteMeal is a social platform where you, the user, can impact your community and friendship by sharing your food habits and taste preferences. What do you like to eat for breakfast, lunch, and/or dinner? Are you out of inspiration about what to eat today? Check this app to fill your hunger pangs by seeing what your friends are eating! Are you curious or would you like to try something new by yourself? Check out some recipes from your community and try it yourself. "Cooking is an art".
-        </p>
-      </div> 
     </div>
-    
-  </div>
+  </nav>
+  <div class="jumbotron jumbotron-fluid brandImage">
 
-   <div class="project">
-    <h2> Cameroon Research Platform (<a href="https://guarded-spire-92095.herokuapp.com/">Live</a>,  <a href="https://github.com/djiani/univProf">source code</a>)</h2>
-    <div class="img_project_block">
-      <img src="./image/univprof.png" alt="project univProf" class="img_project">
+    <div class="container">
+      <div class="jumbotron_block">
+        <div class="jumbotron_image_block">
+          <img src="./image/sam_profile.jpg" class="jumbotron_image">
+        </div>
+        <div class="jumbotron_title">
+          <h1 class="jumbotron_h">Samuel Raoul Djiani</h1>
+          <hr>
+          <h2 class="jumbotron_h2">Full Stack Developer</h2>
+        </div>
+      </div>
+      <div class="jumbotron_desc">
+        <h4>Thanks for visiting!!!</h4>
+
+      </div>
+
     </div>
-    <div class="des_project">
-      <h2>Technologies Used:</h2>
-      <div class="list_tech">
-        <span>Html5, CSS, Bootstrap, JQuery, </span>
-        <span>Nodejs, Express</span>
-        <span>Mongodb, </span>
-        <span>Mocha/Chai, </span>
-        <span>AWS-S3 </span>
-      </div> 
-      <div class="desc_project_p">
-        <h2>Project Description</h2>
-        <p>
-         As of today, there is no common online platform where you can find Cameroonian or African professors, except those who teach outside of the continent. Therefore, it is very challenging to get in contact with most African professors, which makes it hard to collaborate on projects let alone know who they are and what they are working on. Cameroon Research Platform is a web platform designed to share and promote Cameroonian professors as well as African professors and all university professors and researchers who would like to collaborate with other professors and share their experience and professionalism. We encourage all professors -- regardless of where they're located -- to register on this app by sharing their cv, biography, and a summary of their research interest/topics.
-        </p>
+  </div>
+  <div class="container">
+    <div id="bio" class="section">
+      <h1 class="bio_header">Here's a little bit about me</h1>
+      <div class="bio_desc">
+        <p> Since a young age, creativity, innovation, and learning new technology has always been important to me;
+          coding and problem solving are my passion. I love to challenge myself on innovative and interesting projects
+          and it is always satisfying to see ideas come to life.
+
+          I consider myself to be very self-disciplined, optimistic, and detailed-oriented. I enjoy outdoors adventures,
+          new discoveries, and sports events.</p>
       </div>
     </div>
+<!--
+    <div id="projects" class="section">
+      <h1> My Projects</h1>
+      <div class="project">
+        <h2> MyFavoriteMeal (<a href="https://loving-spence-e18248.netlify.com">Live</a>, <a
+            href="https://github.com/djiani/myfavoritemeal_client">source code</a>)</h2>
+
+        <div class="img_project_block">
+          <img src="./image/myfavoritemeal.png" alt="MyFavoriteMeal" class="img_project">
+        </div>
+        <div class=" des_project">
+          <div class="list_tech">
+            <h2>Technologies Used:</h2>
+            <span> HTML5, CSS, Bootstrap, JQuery, </span>
+            <span>React/Redux, </span>
+            <span>Nodejs, Express</span>
+            <span>Mongodb, </span>
+            <span>Mocha/Chai, </span>
+            <span>AWS-S3</span>
+          </div>
+
+          <div class="desc_project_p">
+            <h2>Project Description</h2>
+            <p>
+              MyFavoriteMeal is a social platform where you, the user, can impact your community and friendship by
+              sharing your food habits and taste preferences. What do you like to eat for breakfast, lunch, and/or
+              dinner? Are you out of inspiration about what to eat today? Check this app to fill your hunger pangs by
+              seeing what your friends are eating! Are you curious or would you like to try something new by yourself?
+              Check out some recipes from your community and try it yourself. "Cooking is an art".
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="project">
+        <h2> Cameroon Research Platform (<a href="https://guarded-spire-92095.herokuapp.com/">Live</a>, <a
+            href="https://github.com/djiani/univProf">source code</a>)</h2>
+        <div class="img_project_block">
+          <img src="./image/univprof.png" alt="project univProf" class="img_project">
+        </div>
+        <div class="des_project">
+          <h2>Technologies Used:</h2>
+          <div class="list_tech">
+            <span>Html5, CSS, Bootstrap, JQuery, </span>
+            <span>Nodejs, Express</span>
+            <span>Mongodb, </span>
+            <span>Mocha/Chai, </span>
+            <span>AWS-S3 </span>
+          </div>
+          <div class="desc_project_p">
+            <h2>Project Description</h2>
+            <p>
+              As of today, there is no common online platform where you can find Cameroonian or African professors,
+              except those who teach outside of the continent. Therefore, it is very challenging to get in contact with
+              most African professors, which makes it hard to collaborate on projects let alone know who they are and
+              what they are working on. Cameroon Research Platform is a web platform designed to share and promote
+              Cameroonian professors as well as African professors and all university professors and researchers who
+              would like to collaborate with other professors and share their experience and professionalism. We
+              encourage all professors -- regardless of where they're located -- to register on this app by sharing
+              their cv, biography, and a summary of their research interest/topics.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="project">
+        <h2> EventLocalizer (<a href="https://djiani.github.io/EventLocalizer/">Live</a>, <a
+            href="https://github.com/djiani/EventLocalizer">source code</a>) </h2>
+        <div class="img_project_block">
+          <img src="./image/eventlocalizer.png" alt="project EventLocalizer" class="img_project">
+        </div>
+        <div class="des_project">
+          <h2>Technologies Used:</h2>
+          <div class="list_tech">
+            <span>Html5, CSS, </span>
+            <span>Bootstrap, </span>
+            <span>AJAX, </span>
+            <span>JQuery, </span>
+            <span>Open-Api</span>
+          </div>
+          <div class="desc_project_p">
+            <h2>Project Description</h2>
+            <p>
+              Are you boring? Do you want to hang out, but don't know where to go? Did you just move to a new town? Are
+              you curious about what is going on around you? Are you looking for specific types of events? If so,
+              EventLocalizer is a great app for you. This web app allows you to find all current or upcoming events near
+              you. It'll help you socialize with their community and discover new places to try out!.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div> -->
+
+    <div class="row">
+        <div class="column">
+            <div class="content">
+                <h3>FriendFinder</h3>
+              <img src="./image/friendFinder.png" alt="Mountains" style="width:100%">
+              <p>Social platform to sharing your food habits and taste preferences with your friends and community</p>
+              <h5>Technologies Used:</h5>
     
-  </div>
-  
-   <div class="project">
-    <h2> EventLocalizer (<a href="https://djiani.github.io/EventLocalizer/">Live</a>, <a href="https://github.com/djiani/EventLocalizer">source code</a>) </h2>
-    <div class="img_project_block">
-      <img src="./image/eventlocalizer.png" alt="project EventLocalizer" class="img_project">
-    </div>
-    <div class="des_project">
-      <h2>Technologies Used:</h2>
-      <div class="list_tech">
-        <span>Html5, CSS, </span>
-        <span>Bootstrap, </span>
-        <span>AJAX, </span>
-        <span>JQuery, </span>
-        <span>Open-Api</span>
-      </div> 
-      <div class="desc_project_p">
-        <h2>Project Description</h2>
-        <p>
-          Are you boring? Do you want to hang out, but don't know where to go? Did you just move to a new town? Are you curious about what is going on around you? Are you looking for specific types of events? If so, EventLocalizer is a great app for you. This web app allows you to find all current or upcoming events near you. It'll help you socialize with their community and discover new places to try out!. 
-        </p>
+              <p><span>HTML5, CSS, Bootstrap, JQuery </span>
+                <span>Nodejs, Express</span>
+              </p>
+              <a href="https://loving-spence-e18248.netlify.com">Live</a>, 
+              <a href="https://github.com/djiani/myfavoritemeal_client">Source Code</a>
+            </div>
+          </div>
+      <div class="column">
+        <div class="content">
+            <h3>EventLocalizer</h3>
+          <img src="./image/myfavoritemeal.png" alt="Mountains" style="width:100%">
+          <p>Sharing your food habits and taste preferences with your friends and community</p>
+          <h5>Technologies Used:</h5>
+
+          <p><span> HTML5, CSS, Bootstrap, JQuery, </span>
+            <span>React/Redux, </span>
+            <span>Nodejs, Express</span>
+            <span>Mongodb, </span>
+            <span>Mocha/Chai, </span>
+            <span>AWS-S3</span>
+          </p>
+          <a href="https://loving-spence-e18248.netlify.com">Live</a>, 
+          <a href="https://github.com/djiani/myfavoritemeal_client">Source Code</a>
+
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+            <h3>Cam Research</h3>
+        <img src="./image/univprof.png" alt="Lights" style="width:100%">
+          <p>Promote Cameroonian professors(African professors) researchers</p>
+          <h5>Technologies Used:</h5>
+          <p class="list_tech">
+            <span>Html5, CSS, Bootstrap, JQuery, </span>
+            <span>Nodejs, Express</span>
+            <span>Mongodb, </span>
+            <span>Mocha/Chai, </span>
+            <span>AWS-S3 </span>
+          </p>
+          <a href="https://guarded-spire-92095.herokuapp.com/">Live</a>, 
+          <a href="https://github.com/djiani/univProf">Source Code</a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <h3>EventLocalizer</h3>
+        <img src="./image/eventlocalizer.png" alt="Nature" style="width:100%">
+          <h3>My Work</h3>
+          <p>find all current or upcoming events near you</p>
+          <h5>Technologies Used:</h5>
+          <p class="list_tech">
+            <span>Html5, CSS, </span>
+            <span>Bootstrap, </span>
+            <span>AJAX, </span>
+            <span>JQuery, </span>
+            <span>Open-Api</span>
+          </p>
+          <a href="https://djiani.github.io/EventLocalizer/">Live</a>, 
+          <a href="https://github.com/djiani/EventLocalizer">source code</a>
+        </div>
       </div>
     </div>
-    
-  </div>
-</div>
 
-<div id="skills">
-  <h1 class="skill_header">My Tech Skills</h1>
-  <div class="skill">
-    <ul>
-        <li>HTML5 </li>
-        <li>CSS </li>
-        <li>Bootstrap </li>
-        <li>Javascript </li>
-        <li>JQuery </li>
-        <li>React </li>
-        <li>ES6</li>
-      </ul>
-  </div>
+    <div id="skills" class="section">
+      <h1 class="skill_header">My Tech Skills</h1>
+      <div class="skill">
 
-  <div class="skill">
-    <ul>
-        <li>Restful API </li>
-        <li>NodeJs </li>
-        <li>Express </li>
-        <li>Mongodb </li>
-        <li>Mongoose </li>
-        <li>passport </li>
-        <li>bcrypt </li>
-      </ul>
-    
-  </div>
+        <ul>
+          <li>HTML5 </li>
+          <li>CSS </li>
+          <li>Bootstrap </li>
+          <li>Javascript </li>
+          <li>JQuery </li>
+          <li>React </li>
+          <li>ES6</li>
+        </ul>
+      </div>
 
-  <div class="skill">
-      <ul>
-        <li>Git </li>
-        <li>npm </li>
-        <li>Mocha </li>
-        <li>Travis CL </li>
-        <li>Heroku </li>
-        <li>Netlify </li>
-        
-     </ul>
-  </div>
+      <div class="skill">
+        <ul>
+          <li>Restful API </li>
+          <li>NodeJs </li>
+          <li>Express </li>
+          <li>Mongodb </li>
+          <li>Mongoose </li>
+          <li>passport </li>
+          <li>bcrypt </li>
+        </ul>
 
-  <div class="skill">
-      <ul>
-        <li>Java</li>
-        <li>Python </li>
-        <li>C/C++ </li>
-        <li>Matlab </li>
-        <li>R </li>
-        <li>AWS S3 </li>
-        <li>MySQL</li>
-      </ul>
-  </div>
- 
-</div>
+      </div>
 
-<div id="contact">
-  
-  <div class="contact_text">
-    <h1>Contact Me </h1>
-    <span class="contact_icon">
-      <a href="mailto:djiasara@gmail.com"><i class="fa fa-envelope-o"></i></a> 
-    </span>
-    <span class="contact_icon">
-      <a href="https://www.linkedin.com/in/samuel-raoul-djiani-0a78b1a2/"><i class="fa fa-linkedin"></i></a> 
-    </span>
-    <span class="contact_icon">
-      <a href="https://github.com/djiani"><i class="fa fa-github "></i></a> 
-    </span>
+      <div class="skill">
+        <ul>
+          <li>Git </li>
+          <li>npm </li>
+          <li>Mocha </li>
+          <li>Travis CL </li>
+          <li>Heroku </li>
+          <li>Netlify </li>
+
+        </ul>
+      </div>
+
+      <div class="skill">
+        <ul>
+          <li>Java</li>
+          <li>Python </li>
+          <li>C/C++ </li>
+          <li>Matlab </li>
+          <li>R </li>
+          <li>AWS S3 </li>
+          <li>MySQL</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div id="contact" class="section">
+
+      <div class="contact_text">
+        <h1>Contact Me </h1>
+        <span class="contact_icon">
+          <a href="mailto:djiasara@gmail.com"><i class="fa fa-envelope-o"></i></a>
+        </span>
+        <span class="contact_icon">
+          <a href="https://www.linkedin.com/in/samuel-raoul-djiani-0a78b1a2/"><i class="fa fa-linkedin"></i></a>
+        </span>
+        <span class="contact_icon">
+          <a href="https://github.com/djiani"><i class="fa fa-github "></i></a>
+        </span>
+      </div>
+    </div>
   </div>
-</div>
 
 </body>
+
 </html>

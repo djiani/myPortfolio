@@ -6,7 +6,7 @@ body{
   
 }
 
-.topNav{
+/* .topNav{
   position: fixed;
   top: 0px;
   width: 100%;
@@ -29,21 +29,24 @@ body{
 .topNav a:hover {
     background: #ddd;
     color: black;
-}
+} */
+
 .section{
   width: 100%;
-  min-height: 500px;
+  min-height: 700px;
 }
-.jumbotron{
+
+/* .jumbotron{
   min-height: 500px;
   margin-top: 20px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.4);
-}
-.row{
+} */
+.jumbotron_block{
   height: 80%;
   width: 100%;
   padding-top: 50px;
+  margin:0 auto;
 }
 .jumbotron_image_block{
   height: 100%;
@@ -52,11 +55,14 @@ body{
   margin:0 auto;
    
 }
+
 .jumbotron_title{
   height: 100%;
-  width: 60%;
+  width: 65%;
   display: inline-block;
   vertical-align: top;
+  text-align: center;
+  
 }
 
 .jumbotron_h{
@@ -68,6 +74,7 @@ body{
   color: #FEFE33;
   font-size: 4vw;
 }
+
 .jumbotron_image{
   width: 100%;
   height: 100%;
@@ -77,14 +84,15 @@ body{
 .jumbotron_desc{
   font-size: 3vw;
   padding-top: 50px;
+  text-align: right;
 }
 
 /* bio  */
 #bio{
   width: 100%;
   margin: 0 auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #B2D732;
   min-height:  200px;
   text-align: center;
@@ -94,7 +102,7 @@ body{
   width: 70%;
   margin:0 auto;
   text-align: justify;
-  font-size: 1.5em;
+  font-size: 1.3em;
 
 }
 
@@ -122,7 +130,7 @@ body{
 .img_project_block{
   width: 35%;
   display: inline-block;
-  padding-left: 20px;
+  margin-left: 20px;
   vertical-align: top;
  
 }
@@ -192,65 +200,56 @@ body{
 }
 
 
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  border: 2px solid red;
+  height: 500px;
+  overflow-y: scroll;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+
 @media only screen and (max-width: 768px){
-  .jumbotron{
-    min-height: 300px;
-}
-  .jumbotron_image{
-    height: auto;
+  .column {
+    width: 50%;
   }
-  .img_project_block, .des_project{
-    width: 100%;
-    padding-left: 0px;
-  }
-  
-  .desc_project_p{
-    padding: 10px;
-  }
-
-  .jumbotron_desc{
-    padding-top: 0px;
-    padding-bottom: 15px;
-  }
-
-  .jumbotron_h{
-  font-size: 7vw;
-}
-
-.jumbotron_h2{
-  font-size: 6vw;
-}
-
 
 }
 
 @media only screen and (max-width: 576px){
-  .jumbotron{
-    min-height: 300px;
-  }
-  .row{
-    min-height: 200px;
-  }
-  /*.jumbotron_h{
-    font-size: 2em;
-  }*/
-
-  .jumbotron_image_block, .jumbotron_title{
+  .column {
     width: 100%;
   }
-  .jumbotron_image{
-    height: 70%;
+  .jumbotron_image_block, .jumbotron_title{
+   width: 100%;
+     
   }
-  .jumbotron_desc{
-    padding-top: 0px;
-    font-size: 4vw;
-  }
-
-  .bio_desc{
-    width: 90%;
-    font-size: 1em;
-
-  }
+  
+  
   
  
 }
