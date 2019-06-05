@@ -33,7 +33,7 @@ body{
 
 .section{
   width: 100%;
-  min-height: 700px;
+  min-height: 500px;
 }
 
 /* .jumbotron{
@@ -94,7 +94,7 @@ body{
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #B2D732;
-  min-height:  200px;
+  
   text-align: center;
 }
 
@@ -153,34 +153,31 @@ body{
 /* skills  */
 #skills{
   padding-top: 1px;
-  min-height: 300px;
   background-color: #B2D732;
   text-align: center;
 
 
 }
-.skill{
-  display: inline-block;
-  width: 23%;
-  text-align: left;
-  overflow: hidden;
-  vertical-align: top;
-
-
-}
-.skill ul{
-  padding-left: 10px;
-}
-.skill ul li{
-  list-style-type: none;
+.well{
+  width: 120px;
+  text-align: center;
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+ 
 }
 
 /* contact */
 #contact{
   margin-top: 20px;
-  padding-top: 1px;
+  padding-top: 70px;
+  padding-bottom: 70px;
   text-align: center;
-  min-height: 200px;
   background-color: rgba(255, 255, 255, 0.4);
    
 }
@@ -200,13 +197,13 @@ body{
 }
 
 
-.row {
+.LineRow {
   margin: 8px -16px;
 }
 
 /* Add padding BETWEEN each column */
-.row,
-.row > .column {
+.LineRow,
+.LineRow > .column {
   padding: 8px;
 }
 
@@ -219,8 +216,8 @@ body{
   overflow-y: scroll;
 }
 
-/* Clear floats after rows */ 
-.row:after {
+/* Clear floats after LineRows */ 
+.LineRow:after {
   content: "";
   display: table;
   clear: both;
